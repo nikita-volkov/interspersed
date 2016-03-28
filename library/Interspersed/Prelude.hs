@@ -22,10 +22,6 @@ import Control.Monad.Trans.State.Strict as Exports hiding (liftCallCC, liftCatch
 import Control.Monad.Trans.Writer.Strict as Exports
 import Control.Monad.Trans.Maybe as Exports hiding (liftCallCC, liftCatch, liftListen, liftPass)
 
--- dlist
--------------------------
-import Data.DList as Exports (DList)
-
 -- Utils
 -------------------------
 
