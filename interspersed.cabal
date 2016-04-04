@@ -1,8 +1,9 @@
 name:
   interspersed
 version:
-  0.1
+  0.1.0.1
 synopsis:
+  An abstraction over interspersing monadic actions
 description:
 category:
   Control
