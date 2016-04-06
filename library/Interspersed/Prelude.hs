@@ -28,7 +28,7 @@ import Control.Monad.Trans.Maybe as Exports hiding (liftCallCC, liftCatch, liftL
 {-# INLINE modifyM #-}
 modifyM :: Monad m => (a -> m a) -> StateT a m ()
 modifyM f =
-  StateT (fmap (\s -> ((), s)) . f)
+  StateT (liftM (\s -> ((), s)) . f)
 
 {-# INLINE skipSepBy #-}
 skipSepBy :: Alternative m => m () -> m () -> m ()
