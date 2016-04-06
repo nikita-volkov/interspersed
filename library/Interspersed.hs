@@ -39,5 +39,5 @@ interspersed fx =
   \sep ->
     StateT $
     \first ->
-      fmap (\a -> (a, False)) $
+      liftM (\a -> (a, False)) $
       unless first sep *> fx
