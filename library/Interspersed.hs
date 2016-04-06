@@ -31,7 +31,7 @@ runInterspersed (Interspersed impl) sep =
 -- |
 -- Lifts a monadic action. Same as 'lift'.
 {-# INLINABLE interspersed #-}
-interspersed :: Applicative m => m a -> Interspersed m a
+interspersed :: Monad m => m a -> Interspersed m a
 interspersed fx =
   {-# SCC "interspersed" #-} 
   Interspersed $
