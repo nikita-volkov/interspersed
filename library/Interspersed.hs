@@ -40,4 +40,4 @@ interspersed fx =
     StateT $
     \first ->
       liftM (\a -> (a, False)) $
-      unless first sep *> fx
+      unless first sep >> fx
