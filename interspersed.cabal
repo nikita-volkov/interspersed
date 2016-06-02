@@ -1,7 +1,7 @@
 name:
   interspersed
 version:
-  0.1.1.2
+  0.1.2
 synopsis:
   An abstraction over interspersing monadic actions
 description:
@@ -48,4 +48,5 @@ library
   build-depends:
     -- 
     transformers >= 0.4 && < 0.6,
-    base-prelude < 2
+    base-prelude < 2,
+    base < 5
